@@ -34,6 +34,7 @@ public:
 	virtual void DoTranslation(FVector& InTranslation) override;
 	virtual void DoRotation(FRotator& InRotation) override;
 	virtual void DoScale(FVector& InScale) override;
+	virtual bool SupportsPoseWatch() override {return false;}	
 
 	/** FEdMode interface */
 	virtual void Render(const FSceneView* View, FViewport* Viewport, FPrimitiveDrawInterface* PDI) override;
